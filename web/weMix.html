@@ -3,7 +3,9 @@
 <html>
   <head>
 		<!-- include popcorn.js -->
-		<script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script>
+		<script src="http://www.youtube.com/apiplayer?enablejsapi=1&version=3"></script>
+		<script src="js/popcorn-complete.js"></script>
+		
     <script>
       // ensure the web page (DOM) has loaded
       document.addEventListener("DOMContentLoaded", function () {
@@ -14,12 +16,12 @@
 				                    {
 				                        src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
 				                        in: 12.7,
-				                        out: 16
+				                        out: 14
 				                    },
 				                    {
-				                        src: "http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
-				                        in: 104,
-				                        out: 108
+				                        ytb: "ylLzyHk54Z0",
+				                        in: 4,
+				                        out: 10
 				                    },
 				                    {
 				                        src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
@@ -31,19 +33,19 @@
 				// play popcorn
 				sequence.play();
 
-				sequence.footnote({
-				    start: 0,
-				    end: 2,
-				    text: "footnote",
-				    target: "foo"
-				});
+				// sequence.footnote({
+				//     start: 0,
+				//     end: 2,
+				//     text: "footnote",
+				//     target: "foo"
+				// });
 
 				// get popcorn object of first video
 				console.log( sequence.eq( 0 ) );
 
 				//exec something at 4 seconds
 				sequence.exec( 4, function() {
-				    console.log( "AT 4 SECONDS" );
+								    console.log( "AT 4 SECONDS" );
 				});
 
       }, false);
@@ -51,7 +53,7 @@
   </head>
   <body>
     
-		
+		<div id="ytPlayer" />
 		<!-- <video height="180" width="300" id="ourvideo" controls>
 		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
 		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
