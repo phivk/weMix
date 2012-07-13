@@ -2,6 +2,7 @@
 <!doctype html>
 <html>
   <head>
+		<title>weMix - Online Video Remixing </title>
 		<!-- include popcorn.js -->
 		<script src="http://www.youtube.com/apiplayer?enablejsapi=1&version=3"></script>
 		<script src="js/popcorn-complete.js"></script>
@@ -11,18 +12,18 @@
       document.addEventListener("DOMContentLoaded", function () {
 				// create our sequence
 				var sequence = Popcorn.sequence(
-				                "container-id",
+				                "sequence-player",
 				                [
 				                    {
 				                        src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
 				                        in: 12.7,
 				                        out: 14
 				                    },
-				                    {
-				                        ytb: "ylLzyHk54Z0",
-				                        in: 4,
-				                        out: 10
-				                    },
+														{
+																src: "http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
+																in: 174,
+																out: 178
+														},
 				                    {
 				                        src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
 				                        in: 0,
@@ -52,15 +53,17 @@
     </script>
   </head>
   <body>
+		<!-- title -->
+		<!-- TODO change for logo -->
+		<h1 style = "text-align:center">weMix</h1>
     
-		<div id="ytPlayer" />
+		<!-- <div id="ytPlayer" /> -->
 		<!-- <video height="180" width="300" id="ourvideo" controls>
 		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
 		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
 		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
 		    </video> -->
     <!-- <div id="footnotediv"></div> -->
-		<div id="container-id"></div>
-		<!-- <div id="foo"></div> -->​
+		<div id="sequence-player"></div>
   </body>
 </html>
