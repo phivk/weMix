@@ -1,0 +1,9 @@
+* {
+  /* draw Borders for DEBUG */
+	border: 1px solid gray;
+	
+}
+
+#central-pane {
+  text-align:center;
+}

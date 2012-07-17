@@ -2,71 +2,24 @@
 <!doctype html>
 <html>
   <head>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		
 		<title>weMix - Online Video Remixing </title>
 		<!-- include popcorn.js -->
 		<script src="http://www.youtube.com/apiplayer?enablejsapi=1&version=3"></script>
 		<script src="js/popcorn-complete.js"></script>
 		
-    <script>
-      // ensure the web page (DOM) has loaded
-      document.addEventListener("DOMContentLoaded", function () {
-				// create our sequence
-				var sequence = Popcorn.sequence(
-				                "sequence-player",
-				                [
-				                    {
-				                        src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
-				                        in: 12.7,
-				                        out: 14
-				                    },
-														{
-																src: "http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
-																in: 174,
-																out: 178
-														},
-				                    {
-				                        src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
-				                        in: 0,
-				                        out: 6
-				                    }
-				                ]);
-
-				// play popcorn
-				sequence.play();
-
-				// sequence.footnote({
-				//     start: 0,
-				//     end: 2,
-				//     text: "footnote",
-				//     target: "foo"
-				// });
-
-				// get popcorn object of first video
-				console.log( sequence.eq( 0 ) );
-
-				//exec something at 4 seconds
-				sequence.exec( 4, function() {
-								    console.log( "AT 4 SECONDS" );
-				});
-
-      }, false);
-    </script>
+		<script type="text/javascript" src="js/example_sequence.js"></script>
+    
   </head>
   <body>
-		<!-- title -->
-		<!-- TODO change for logo -->
-		<h1 style = "text-align:center">weMix</h1>
+		<div id="central-pane">
+			<!-- title -->
+			<!-- TODO change for logo -->
+			<h1>weMix</h1>
     
-		<!-- <div id="ytPlayer" /> -->
-		<!-- <video height="180" width="300" id="ourvideo" controls>
-		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.mp4">
-		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv">
-		      <source src="http://videos.mozilla.org/serv/webmademovies/popcornplug.webm">
-		    </video> -->
-    <!-- <div id="footnotediv"></div> -->
-
-		<!-- Video Player playing example sequece -->
-		<div style="text-align:center" id="sequence-player"></div>
-
+			<!-- Video Player playing example sequece -->
+			<div id="sequence-player"></div>
+		</div>	
   </body>
 </html>
