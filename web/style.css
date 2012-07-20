@@ -46,16 +46,76 @@ a{
   color:white; 
 }
 
+
+/*MAIN CONTENT*/
+#main_content{
+    display:inline-block;
+}
+#main_content > *{
+/*    border:1px dashed red;*/
+}
+
 #left_column {
-  margin-right:200px;
-  text-align:center;
+/*  margin-right:300px;*/
+/*  text-align:center;*/
+/*  position:relative;*/
+  width:640px;
+  float:left;
+}
+
+#left_column > * {
+/*  border:1px dashed gray;*/
 }
 
 #right_column {
+  text-align:center;
   float:right;
-  width:200px;
+  width:300px;
+  
+  position:relative;
+  left:10px;
+  
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 5px solid #666666;
+  
+  background:#CCCCCC;
 }
 
+#right_column #steps{
+  color:#333333;
+  font-size:larger;
+  font-style:bold;
+}
+
+#three_vids {
+  width : 640px;
+  background: white;
+  
+  margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#three_vids video {
+  width: 210px;
+  height:150px;
+}
+
+#sequence-player{
+  width:600px;
+  margin-left: auto;
+	margin-right: auto;
+	text-a  lign: left;
+  /*TODO center align properly*/
+	position:relative;
+	right:20px;
+}
+
+
+
+/*FOOTER*/
 #footer{
   background:black;
 }

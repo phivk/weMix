@@ -5,19 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	                "sequence-player",
 	                [
 	                    {
-	                        src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
-	                        in: 6, // 12.7,
-	                        out: 7
+	                        //src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
+	                        src: "content/video/video1.webm",
+	                        in: 40, //6,
+	                        out: 45
 	                    },
 											{
-													src: 	"http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
+                          // src:   "http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
+													src: 	"content/video/video3.webm",
 													in: 5 , //174,
-													out: 7 , //178
+													out: 10 , //178
 											},
 	                    {
-	                        src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
-	                        in: 0,
-	                        out: 6
+	                        //src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
+	                        src: "content/video/video2.webm",
+	                        in: 16,
+	                        out: 20
 	                    }
 	                ]);
 
