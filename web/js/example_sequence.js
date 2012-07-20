@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	                ]);
 
 	// play popcorn
-	sequence.play();
+  // sequence.play();
 
 	// sequence.footnote({
 	//     start: 0,

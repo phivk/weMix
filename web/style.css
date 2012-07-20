@@ -1,9 +1,72 @@
 * {
   /* draw Borders for DEBUG */
-	border: 1px solid gray;
+/*  border: 1px dashed gray;*/
+	font-family: Helvetica, sans-serifs;
 	
 }
 
-#central-pane {
+a{
+  text-decoration:none;
+}
+
+#header {
+  background:#666666;
+  position:relative;
+}
+
+#logo{
+  padding:10px;
+  height:70px;
+  position:relative;
+}
+
+#nav {
+/*  display:inline-block;*/
+  position:relative;
+  right:0;
+}
+
+#nav ul {
+  background:black;
+  list-style-type:none;
+  position:relative;
+  right:0;
+}
+
+#nav ul li{
+  display:inline-block;
+  padding:5px;
+}
+
+#nav ul li:hover{
+  background:silver;
+}
+
+#nav ul li a{
+  color:white; 
+}
+
+#left_column {
+  margin-right:200px;
   text-align:center;
+}
+
+#right_column {
+  float:right;
+  width:200px;
+}
+
+#footer{
+  background:black;
+}
+
+#footer ul{
+  list-style-type:none;
+}
+
+#footer ul li{
+  display:inline-block;
+  padding:5px;
+  color:white;
+  
 }
