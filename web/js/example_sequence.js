@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	                    {
 	                        //src: "http://videos.mozilla.org/serv/webmademovies/atultroll.webm",
 	                        src: "content/video/video1.webm",
-	                        in: 40, //6,
-	                        out: 45
+	                        in: 41, //6,
+	                        out: 44
 	                    },
 											{
                           // src:   "http://videos.mozilla.org/serv/webmademovies/justintime.ogv",
 													src: 	"content/video/video3.webm",
-													in: 5 , //174,
+													in: 7 , //174,
 													out: 10 , //178
 											},
 	                    {
 	                        //src: "http://videos.mozilla.org/serv/webmademovies/popcornplug.ogv",
 	                        src: "content/video/video2.webm",
-	                        in: 16,
+	                        in: 17,
 	                        out: 20
 	                    }
 	                ]);
